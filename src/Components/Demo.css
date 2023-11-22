@@ -1,0 +1,247 @@
+.book {
+    position: relative;
+    margin-top: 70px;
+    margin-left: 200px;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(232, 194, 67);
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000000;
+    -webkit-transform: preserve-3d;
+    -ms-transform: preserve-3d;
+    transform: preserve-3d;
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: block;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #000;
+  }
+  .imgwoman{
+    height:480px;
+    width:490px;
+    margin-left: 20px;
+  }
+  .malala{
+    padding: 50px;
+    padding-top: 160px;
+  }
+  .ja{
+    padding-left: 270px;
+    color: rgb(18, 41, 82);
+  }
+  .main1{
+    display: flex;
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+  .getinvolved{
+    margin-top: 70px;
+    margin-left: 40px;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(229, 189, 58);
+  }
+  .suvidhatext{
+    margin-left: 40px;
+    font-size:40px;
+    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0e1c36b8;
+  }
+  .cover {
+    top: 0;
+    position: absolute;
+    background-color: rgb(13, 33, 59);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  
+  .book:hover .cover {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotatey(-80deg);
+    -ms-transform: rotatey(-80deg);
+    transform: rotatey(-80deg);
+  }
+  
+  p {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  /* -----------------------------------------------------
+  ----------------------------------------------------- */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+  ::selection {
+    background: rgba(23, 162, 184, 0.3);
+  }
+  
+  .wrapper {
+    max-width: 700px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 25px 30px 30px 30px;
+    border-radius: 5px;
+
+    background: #fff;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper header {
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    color: #333; /* Text color */
+  }
+  
+  .wrapper nav {
+    position: relative;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .wrapper nav label {
+    display: block;
+    height: 100%;
+    width: calc(100% / 3); /* Divide the width into 3 equal parts for 3 tabs */
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    color: #17a2b8;
+    font-size: 17px;
+    border-radius: 5px;
+    margin: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .wrapper nav label:hover {
+    background: rgba(229, 189, 58,0.3);
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  section .content {
+    display: none;
+    background: #fff;
+    color: #333; /* Text color */
+  }
+  
+  /* Adjusted styles for individual tabs */
+  #home:checked ~ nav label.home,
+  #blog:checked ~ nav label.blog,
+  #code:checked ~ nav label.code {
+    color: #fff;
+  }
+  
+  nav label i {
+    padding-right: 7px;
+  }
+  
+  nav .slider {
+    position: absolute;
+    height: 100%;
+    width: calc(100% / 3); /* Divide the width into 3 equal parts for 3 tabs */
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    border-radius: 5px;
+    background: rgb(229, 189, 58);
+    transition: all 0.3s ease;
+  }
+  
+  /* Adjusted left position for slider */
+  #blog:checked ~ nav .slider {
+    left: calc(100% / 3);
+  }
+  
+  #code:checked ~ nav .slider {
+    left: calc(100% / 3 * 2);
+  }
+  
+  /* Adjusted display for contents */
+  #home:checked ~ section .content-1,
+  #blog:checked ~ section .content-2,
+  #code:checked ~ section .content-3 {
+    display: block;
+  }
+  
+  section .content .title {
+    font-size: 21px;
+    font-weight: 500;
+    margin: 30px 0 10px 0;
+  }
+  
+  section .content p {
+    text-align: justify;
+  }
+  /* Other CSS styles remain the same */
+
+/* Adjusted display for contents */
+#home:checked ~ section .content-1,
+#blog:checked ~ section .content-2,
+#code:checked ~ section .content-3 {
+  display: block;
+}
+
+/* Adjusted text color for content titles */
+#home:checked ~ section .content-1 .title,
+#blog:checked ~ section .content-2 .title,
+#code:checked ~ section .content-3 .title {
+  color: #333; /* Text color */
+}
+
+section .content .title {
+  font-size: 21px;
+  font-weight: 500;
+  margin: 30px 0 10px 0;
+}
+.title{
+  color: #5d5b5b;
+  width:500px;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+section .content p {
+  text-align: justify;
+}
+
+  
+
+
+
+
+

@@ -1,0 +1,99 @@
+.card-events_main {
+    /* position: relative; */
+    width: 100%;
+    height: 350px;
+    background-image:url('he3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: px;
+    display: flex;
+    /* padding: 10px 30px; */
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 102px;
+  }
+.ahref{
+    text-decoration: none;
+    color: aliceblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.ahref:hover{
+    color: rgb(255, 207, 61);
+}
+
+
+
+  .help-img-body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    width:100%;
+    font-weight: 700;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+
+  .event_homepage{
+    text-align: center;
+    margin-top: -20px;
+}
+.head7{
+    color: rgb(239, 203, 26);
+    padding-top: 90px;
+}
+
+.eventcardz{
+    display: inline-block;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 14%;
+}
+.twocards{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.card-eve {
+    width: 500px;
+    height: 514px;
+    background: rgb(236, 236, 236);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    justify-content: center;
+    margin-right: 40px;
+  }
+  .card-eve1 {
+    width: 500px;
+    height: 554px;
+    background: rgb(236, 236, 236);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    justify-content: center;
+    margin-right: 40px;
+  }
+  .z1{
+    width:498px;
+    padding: 1px;
+    height:350px;
+  }
+  .matter{
+    display: flex;
+  }
+  .linex{
+    height:120px;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+  .linexx{
+    height:170px;
+    margin-left: 30px;
+    margin-top: 15px;
+  }
+  .matter-text{
+    display: block;
+  }

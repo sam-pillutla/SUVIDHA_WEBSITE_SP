@@ -1,0 +1,327 @@
+.navba {
+  background: linear-gradient(rgba(3, 15, 22, 0.5), rgba(9, 37, 56, 0.5)); /* Linear gradient with RGBA color */
+  transition: background-color 0.3s ease;
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+  .navba.sticky {
+    background-color: rgb(21, 21, 62);
+    position: fixed;
+    top: 0;
+  }
+  
+  /* Add your other CSS styles as needed */
+  .logo {
+    width: 350px;
+    height: 100px;
+    margin-left: 40px;
+    margin-right: 195px;
+  }
+  
+  .navba-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+  }
+  
+  .navba-links li {
+    margin-right: 30px;
+    font-size:large;
+  }
+  
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .btnn21 {
+    position: relative;
+    display: inline-block;
+    padding: 15px 10px;
+    border: 2px solid #ffd310;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 13px;
+    transition: 0.3s;
+    box-shadow: #fefefe;
+  }
+  
+  .btnn21::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - -2px);
+    background-color: #0c193af6;
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
+  }
+  
+  .btnn21::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 50px);
+    background-color: #21212100;
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
+  }
+  
+  .btnn21:hover::before {
+    transform: translateY(-25px);
+    height: 0;
+  }
+  
+  .btnn21:hover::after {
+    transform: scaleX(0);
+    transition-delay: 0.15s;
+  }
+  
+  .btnn21:hover {
+    border: 2px solid #ffd310;
+  }
+  
+  .btnn21 span {
+    position: relative;
+    z-index: 3;
+  }
+  
+  button {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+  }
+/* ----------------------------------------------------------
+---------------------------------------------------------- */
+  .containe-button {
+    margin-top: 30px;
+    margin-right:15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "bt-1 bt-2 bt-3"
+      "bt-4 bt-5 bt-6";
+    position: relative;
+    perspective: 800;
+    margin-left: 100px;
+    width: 100px;
+    height: 40px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .containe-button:active {
+    transform: scale(0.95);
+  }
+  
+  .hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+  }
+  
+  .bt-1 {
+    grid-area: bt-1;
+  }
+  
+  .bt-2 {
+    grid-area: bt-2;
+  }
+  
+  .bt-3 {
+    grid-area: bt-3;
+  }
+  
+  .bt-4 {
+    grid-area: bt-4;
+  }
+  
+  .bt-5 {
+    grid-area: bt-5;
+  }
+  
+  .bt-6 {
+    grid-area: bt-6;
+  }
+  
+  .bt-1:hover ~ .button1{
+    transform: rotateX(15deg) rotateY(-15deg) rotateZ(0deg);
+    box-shadow: -2px -2px #18181888;
+  }
+  
+  .bt-1:hover ~ .button1::after {
+    animation: shake 0.5s ease-in-out 0.3s;
+    text-shadow: -2px -2px #18181888;
+  }
+  
+  .bt-3:hover ~ .button1 {
+    transform: rotateX(15deg) rotateY(15deg) rotateZ(0deg);
+    box-shadow: 2px -2px #18181888;
+  }
+  
+  .bt-3:hover ~ .button1::after {
+    animation: shake 0.5s ease-in-out 0.3s;
+    text-shadow: 2px -2px #18181888;
+  }
+  
+  .bt-4:hover ~ .button1 {
+    transform: rotateX(-15deg) rotateY(-15deg) rotateZ(0deg);
+    box-shadow: -2px 2px #18181888;
+  }
+  
+  .bt-4:hover ~ .button1::after {
+    animation: shake 0.5s ease-in-out 0.3s;
+    text-shadow: -2px 2px #18181888;
+  }
+  
+  .bt-6:hover ~ .button1 {
+    transform: rotateX(-15deg) rotateY(15deg) rotateZ(0deg);
+    box-shadow: 2px 2px #18181888;
+  }
+  
+  .bt-6:hover ~ .button1::after {
+    animation: shake 0.5s ease-in-out 0.3s;
+    text-shadow: 2px 2px #18181888;
+  }
+  
+  .hover:hover ~ .button1::before {
+    background: transparent;
+  }
+  
+  .hover:hover ~ .button1::after {
+    content: "Be the change";
+    top: -95%;
+    transform: translate(-50%, 0);
+    font-size: 13px;
+    color: #f19c2b;
+  }
+  
+  .button1 {
+    position: absolute;
+    padding: 0;
+    width: 100px;
+    height: 40px;
+    background: transparent;
+    font-size: 17px;
+    font-weight: 900;
+    border: 3px solid #f39923;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button1::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 40px;
+    background-color: #f5ae51;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+  }
+  
+  .button1::after {
+    content: "HELP";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 40px;
+    color: #0b223b;
+    border: none;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+  }
+  
+  @keyframes shake {
+    0% {
+      left: 45%;
+    }
+  
+    25% {
+      left: 54%;
+    }
+  
+    50% {
+      left: 48%;
+    }
+  
+    75% {
+      left: 52%;
+    }
+  
+    100% {
+      left: 50%;
+    }
+  }
+
+
+  /* ------------------------------------------
+  ------------------------------------------ */
+  .buttonn12 {
+    margin-top: 30px;
+    margin-right: 1px;
+    display: inline-block;
+    border-radius: 7px;
+    border: none;
+    background-color: #f5ae51;
+    border: 3px solid #f39923;
+    color: #0b223b;
+    font-family: inherit;
+    text-align: center;
+    font-size: 18px;
+    font-weight:700;
+    width: 240px;
+    height: 40px;
+    transition: all 0.4s;
+    cursor: pointer;
+    vertical-align:middle
+   }
+   
+   .buttonn12 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+   }
+   
+   .buttonn12 span:after {
+    content: 'Application';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -30px;
+    transition: 0.7s;
+   }
+   
+   .buttonn12:hover span {
+    padding-right:90px;
+   }
+   
+   .buttonn12:hover span:after {
+    opacity: 4;
+    right:0;
+    left:87px
+   }

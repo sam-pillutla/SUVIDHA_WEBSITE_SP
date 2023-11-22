@@ -1,0 +1,213 @@
+.body-scroll{
+    display: flex;
+    justify-content: center;
+    margin-top: px;
+}
+.parent {
+    width: 1500px;
+    perspective: 1000px;
+  }
+  
+  .cardo {
+    padding-top: 50px;
+    height: 790px;
+    /* border-radius: 10px; */
+    /* border: 3px solid rgb(255, 255, 255); */
+    transform-style: preserve-3d;
+    background: linear-gradient(135deg,#0000 18.75%,#f3f3f3 0 31.25%,#0000 0),
+        repeating-linear-gradient(45deg,#f3f3f3 -6.25% 6.25%,#ffffff 0 18.75%);
+    background-size: 60px 60px;
+    background-position: 0 0, 0 0;
+    background-color: #f0f0f0;
+    width: 100%;
+    box-shadow: rgba(142, 142, 142, 0.3) 0px 30px 30px -10px;
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .cardo:hover {
+    background-position: -100px 100px, -100px 100px;
+    /* transform:rotate3d(0.5, 1, 0, 20deg); */
+    transform: scale3d(1, 1, 1.7);
+  }
+  
+  .content-box {
+    background:rgb(255, 252, 242,0.6);
+    /* border-radius: 10px 100px 10px 10px; */
+    transition: all 0.5s ease-in-out;
+    padding: 60px 25px 25px 25px;
+    transform-style: preserve-3d;
+    height: 698px;
+    margin-top: 10px;
+  }
+  
+  .content-box .cardo-title {
+    display: inline-block;
+    color: rgb(84, 107, 148);
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 50px);
+  }
+  
+  .content-box .cardo-title:hover {
+    transform: translate3d(0px, 0px, 60px);
+  }
+  
+  .content-box .cardo-content {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #f2f2f2;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 30px);
+  }
+  
+  .content-box .cardo-content:hover {
+    transform: translate3d(0px, 0px, 60px);
+  }
+  
+  .content-box .see-more {
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+    font-weight: 900;
+    font-size: 9px;
+    text-transform: uppercase;
+    color: rgb(239, 203, 26);
+    /* border-radius: 5px; */
+    background: white;
+    padding: 0.5rem 0.7rem;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 20px);
+  }
+  
+  .content-box .see-more:hover {
+    transform: translate3d(0px, 0px, 60px);
+  }
+  
+  .date-box {
+    position: absolute;
+    top: 250px;
+    right: 900px;
+    height: 150px;
+    width: 300px;
+    background: white;
+    border: 1px solid rgb(239, 203, 26);
+    /* border-radius: 10px; */
+    padding: 10px;
+    transform: translate3d(0px, 0px, 80px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 17px 10px -10px;
+    display: flex;
+  }
+  
+
+  .date-box1{
+    position: absolute;
+    top: 250px;
+    right: 550px;
+    height: 150px;
+    width: 300px;
+    background: white;
+    border: 1px solid rgb(239, 203, 26);
+    /* border-radius: 10px; */
+    padding: 10px;
+    transform: translate3d(0px, 0px, 80px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 17px 10px -10px;
+    display: flex;
+  }
+  
+  .date-box2{
+    position: absolute;
+    top: 250px;
+    right: 200px;
+    height: 150px;
+    width: 300px;
+    background: white;
+    border: 1px solid rgb(239, 203, 26);
+    /* border-radius: 10px; */
+    padding: 10px;
+    transform: translate3d(0px, 0px, 80px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 17px 10px -10px;
+    display: flex;
+  }
+  
+
+   
+
+  .date-box3{
+    position: absolute;
+    top: 450px;
+    right: 200px;
+    height: 150px;
+    width: 300px;
+    background: white;
+    border: 1px solid rgb(239, 203, 26);
+    /* border-radius: 10px; */
+    padding: 10px;
+    transform: translate3d(0px, 0px, 80px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 17px 10px -10px;
+    display: flex;
+  }
+
+  
+
+  .date-box4{
+    position: absolute;
+    top: 450px;
+    right: 550px;
+    height: 150px;
+    width: 300px;
+    background: white;
+    border: 1px solid rgb(239, 203, 26);
+    /* border-radius: 10px; */
+    padding: 10px;
+    transform: translate3d(0px, 0px, 80px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 17px 10px -10px;
+    display: flex;
+  }
+  
+
+
+  .date-box5{
+    position: absolute;
+    top: 450px;
+    right: 900px;
+    height: 150px;
+    width: 300px;
+    background: white;
+    border: 1px solid rgb(239, 203, 26);
+    /* border-radius: 10px; */
+    padding: 10px;
+    transform: translate3d(0px, 0px, 80px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 17px 10px -10px;
+    display: flex;
+  }
+  
+  
+.month {
+    color: rgb(133, 133, 133);
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+.date {
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(239, 203, 26);
+  }
+
+  .heading-center{
+    text-align: center;
+  }
+  .head5{
+    color: rgb(239, 203, 26);
+  }
+  .img9{
+    width:80px;
+    height:90px;
+  }
+  .sam{
+    display:inline-block;
+    padding-top: 10px;
+  }
